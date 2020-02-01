@@ -4,9 +4,9 @@ const myFunctionExpression = function() {
 };
 
 // Question 2
-const button = document.querySelector(".btn");
+const clickbutton = document.querySelector(".btn");
 
-button.addEventListener("click", function() {
+clickbutton.addEventListener("click", function() {
     console.log("I was clicked");
 });
 
@@ -22,6 +22,12 @@ document.querySelector(".btn").addEventListener("click", function() {
 const inputFirstName = document.querySelector("#firstName");
 
 inputFirstName.addEventListener("keydown", function(keyPress) {
-    console.dir(keyPress);
     console.log(keyPress.key);
+});
+
+// Question 4
+const hoverButton = document.querySelector("button");
+
+hoverButton.addEventListener("mouseover", function() {
+    hoverButton.classList.add("hover");
 });
