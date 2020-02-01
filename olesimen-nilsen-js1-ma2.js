@@ -26,8 +26,15 @@ inputFirstName.addEventListener("keydown", function(keyPress) {
 });
 
 // Question 4
-const hoverButton = document.querySelector("button");
+const hoverButton1 = document.querySelector("button");
 
-hoverButton.addEventListener("mouseover", function() {
-    hoverButton.classList.add("hover");
+hoverButton1.addEventListener("mouseover", function() {
+    hoverButton1.classList.add("hover");
+});
+
+// Question 5
+const hoverButton2 = document.querySelector("[data-animal='dog']");
+
+hoverButton2.addEventListener("mouseout", function() {
+    hoverButton2.classList.remove("hover");
 });
