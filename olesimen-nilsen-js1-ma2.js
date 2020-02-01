@@ -10,9 +10,18 @@ button.addEventListener("click", function() {
     console.log("I was clicked");
 });
 
-/* document.querySelector(".btn").addEventListener("click", function() {
+/* 
+Do we need to select the button using a variable first, or could we do it like this?
+
+document.querySelector(".btn").addEventListener("click", function() {
     console.log("I was clicked");
 });
+*/
 
+// Question 3
+const inputFirstName = document.querySelector("#firstName");
 
-Do we need to select the button using a variable first, or could we do like this?  */
+inputFirstName.addEventListener("keydown", function(keyPress) {
+    console.dir(keyPress);
+    console.log(keyPress.key);
+});
