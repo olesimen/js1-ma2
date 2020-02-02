@@ -26,18 +26,17 @@ inputFirstName.addEventListener("keydown", function(keyPress) {
 });
 
 // Question 4
-const hoverButton1 = document.querySelector("button");
+var hoverButton = document.querySelector("button");
 
-hoverButton1.addEventListener("mouseover", function() {
-    hoverButton1.classList.add("hover");
+hoverButton.addEventListener("mouseover", function() {
+    hoverButton.classList.add("hover");
 });
 
 // Question 5
-// Change const to let?
-const hoverButton2 = document.querySelector("[data-animal='dog']");
+var hoverButton = document.querySelector("[data-animal='dog']");
 
-hoverButton2.addEventListener("mouseout", function() {
-    hoverButton2.classList.remove("hover");
+hoverButton.addEventListener("mouseout", function() {
+    hoverButton.classList.remove("hover");
 });
 
 // Question 6
@@ -50,8 +49,7 @@ for (let i = 0; i < listItems.length; i++) {
 }
 
 // Question 7
-// Not sure about this
-const animal = "";
+const animal = "cow";
 
 switch (animal) {
     case "cat":
@@ -77,3 +75,17 @@ const sheep = ["Malcolm", "Anders", "Marie"];
 sheep.forEach(function(sheepName) {
     console.log(sheepName);
 });
+
+// Question 9
+const intervalId = setInterval(sayHello, 500);
+let counter = 0;
+
+function sayHello() {
+    console.log("Hello");
+
+    if (counter === 5) {
+        clearInterval(intervalId);
+    }
+
+    counter++;
+}
