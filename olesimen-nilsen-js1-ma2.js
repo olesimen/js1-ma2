@@ -33,8 +33,18 @@ hoverButton1.addEventListener("mouseover", function() {
 });
 
 // Question 5
+// Change const to let?
 const hoverButton2 = document.querySelector("[data-animal='dog']");
 
 hoverButton2.addEventListener("mouseout", function() {
     hoverButton2.classList.remove("hover");
 });
+
+// Question 6
+const listItems = document.querySelectorAll("li");
+
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].addEventListener("mouseover", function() {
+        console.log(listItems[i].dataset.animal);
+    });
+}
