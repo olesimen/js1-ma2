@@ -91,9 +91,12 @@ function upToDate() {
 
 setTimeout(upToDate, 2000);
 
-// Is it "best-practice" to select elements by assigning them to a variable first, declaring the function and then pass it into the setTimeout (or any other) method, or could we write the entire method like the one below? I get lost in all the names and noticed that this works...
+/* Is it "best-practice" to select elements by assigning them to a variable first, 
+declaring the function and then pass it into the setTimeout (or any other) method, 
+or could we write the entire method like the one below? I get lost in all the names 
+and noticed that this works...
 
-/* 
+
 setTimeout(function() {
     document.querySelector(".container").innerHTML = "Text updated";
 }, 2000); 
