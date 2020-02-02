@@ -48,3 +48,25 @@ for (let i = 0; i < listItems.length; i++) {
         console.log(listItems[i].dataset.animal);
     });
 }
+
+// Question 7
+// Not sure about this
+const animal = "";
+
+switch (animal) {
+    case "cat":
+        console.log("Meow");
+        break;
+
+    case "cow":
+        console.log("Moo");
+        break;
+
+    case "bird":
+        console.log("Tweet");
+        break;
+
+    default:
+        console.log("Harrumph");
+        break;
+}
