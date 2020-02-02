@@ -10,14 +10,6 @@ clickbutton.addEventListener("click", function() {
     console.log("I was clicked");
 });
 
-/* 
-Do we need to select the button using a variable first, or could we do it like this?
-
-document.querySelector(".btn").addEventListener("click", function() {
-    console.log("I was clicked");
-});
-*/
-
 // Question 3
 const inputFirstName = document.querySelector("#firstName");
 
@@ -89,3 +81,20 @@ function sayHello() {
 
     counter++;
 }
+
+// Question 10
+const statusContainer = document.querySelector(".container");
+
+function upToDate() {
+    statusContainer.innerHTML = "Text updated";
+}
+
+setTimeout(upToDate, 2000);
+
+// Is it "best-practice" to select elements by assigning them to a variable first, declaring the function and then pass it into the setTimeout (or any other) method, or could we write the entire method like the one below? I get lost in all the names and noticed that this works...
+
+/* 
+setTimeout(function() {
+    document.querySelector(".container").innerHTML = "Text updated";
+}, 2000); 
+*/
