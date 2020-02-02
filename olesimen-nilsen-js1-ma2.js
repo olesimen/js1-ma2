@@ -70,3 +70,10 @@ switch (animal) {
         console.log("Harrumph");
         break;
 }
+
+// Question 8
+const sheep = ["Malcolm", "Anders", "Marie"];
+
+sheep.forEach(function(sheepName) {
+    console.log(sheepName);
+});
